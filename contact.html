@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تواصل معنا - AGRIPRO</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="main-header">
+<div class="logo">AGRIPRO</div>
+<nav>
+<a href="index.html">الرئيسية</a>
+<a href="products.html">منتجاتنا</a>
+<a href="about.html">من نحن</a>
+<a href="contact.html">تواصل معنا</a>
+</nav>
+<select id="languageSwitcher">
+<option value="ar">AR</option>
+<option value="en">EN</option>
+<option value="fr">FR</option>
+</select>
+</header>
+<section class="contact">
+<h2>تواصل معنا</h2>
+<form action="https://formspree.io/f/maqqarrn" method="POST" enctype="multipart/form-data">
+<input type="text" name="name" placeholder="الاسم" required>
+<input type="email" name="email" placeholder="البريد الإلكتروني" required>
+<input type="file" name="attachment" accept=".pdf,.doc,.docx,.jpg,.png">
+<textarea name="message" placeholder="رسالتك" required></textarea>
+<input type="hidden" name="_captcha" value="false">
+<button type="submit">إرسال</button>
+</form>
+</section>
+<footer><p>© 2026 AGRIPRO. جميع الحقوق محفوظة.</p></footer>
+<script src="js/lang.js"></script>
+</body>
+</html>
