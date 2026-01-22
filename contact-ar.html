@@ -6,7 +6,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css">
 </head>
-
 <body dir="rtl">
 
 <header>
@@ -41,18 +40,22 @@
         <p><strong>العنوان:</strong> مركز التنمية الزراعية</p>
     </div>
 
-    <form class="contact-form"
-          action="https://formspree.io/f/mwvleqdp"
-          method="POST"
-          enctype="multipart/form-data">
+    <!-- نموذج الفورم -->
+    <form
+      action="https://formspree.io/f/maqqarrn"
+      method="POST"
+    >
+        <label for="email">البريد الإلكتروني:</label>
+        <input type="email" name="email" id="email" placeholder="أدخل بريدك الإلكتروني" required>
 
-        <input type="text" name="name" placeholder="الاسم" required>
-        <input type="email" name="email" placeholder="البريد الإلكتروني" required>
-        <textarea name="message" placeholder="نص الرسالة" required></textarea>
+        <label for="message">نص الرسالة:</label>
+        <textarea name="message" id="message" placeholder="اكتب رسالتك هنا" required></textarea>
 
-        <!-- رفع ملف -->
-        <input type="file" name="attachment">
+        <!-- حقول إضافية -->
+        <label for="name">الاسم:</label>
+        <input type="text" name="name" id="name" placeholder="أدخل اسمك">
 
+        <!-- زر الإرسال -->
         <button type="submit">إرسال الرسالة</button>
     </form>
 
