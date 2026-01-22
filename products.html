@@ -1,34 +1,54 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
+<title>Our Products</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>منتجاتنا - AGRIPRO</title>
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="style.css">
 </head>
-<body>
-<header class="main-header">
-<div class="logo">AGRIPRO</div>
-<nav>
-<a href="index.html">الرئيسية</a>
-<a href="products.html">منتجاتنا</a>
-<a href="about.html">من نحن</a>
-<a href="contact.html">تواصل معنا</a>
-</nav>
-<select id="languageSwitcher">
-<option value="ar">AR</option>
-<option value="en">EN</option>
-<option value="fr">FR</option>
-</select>
+
+<body dir="ltr">
+
+<header>
+    <div class="logo">MyCompany</div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+        </ul>
+    </nav>
+
+    <div class="language-switcher">
+        <a href="products.html">EN</a>
+        <a href="products-ar.html">AR</a>
+    </div>
 </header>
-<section class="products">
-<h2>منتجاتنا</h2>
-<div class="product-cards">
-<div class="card"><img src="images/product1.jpg" alt="منتج 1"><h3>جهاز أجراس 1</h3><p>وصف مختصر للمنتج.</p></div>
-<div class="card"><img src="images/product2.jpg" alt="منتج 2"><h3>جهاز أجراس 2</h3><p>وصف مختصر للمنتج.</p></div>
-<div class="card"><img src="images/product3.jpg" alt="منتج 3"><h3>جهاز أجراس 3</h3><p>وصف مختصر للمنتج.</p></div>
-</div>
-</section>
-<footer><p>© 2026 AGRIPRO. جميع الحقوق محفوظة.</p></footer>
+
+<main>
+    <h1 class="section-title">Foliar Products</h1>
+
+    <section class="products-grid">
+        <div class="product-card">
+            <img src="images/product1.jpg">
+            <div class="product-content">
+                <h3>Product Name 1</h3>
+                <p>Short description of the product.</p>
+
+                <div class="product-actions">
+                    <a href="#" class="btn-details">Details</a>
+                    <a href="pdf/product1.pdf" class="btn-pdf">PDF</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- كرر المنتج -->
+    </section>
+</main>
+
+<footer>
+    © 2026 All rights reserved
+</footer>
+
 </body>
 </html>
