@@ -110,3 +110,59 @@ body[dir=rtl] .contact-grid{direction:rtl}
         grid-template-columns:1fr;
     }
 }
+/* ===== Contact Form (Final) ===== */
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+body[dir=rtl] .contact-grid{direction:rtl}
+
+.contact-info p{
+    margin-bottom:10px;
+    font-size:15px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:10px;
+    margin-bottom:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:14px;
+}
+
+.contact-form input[type=file]{
+    padding:6px;
+}
+
+.contact-form textarea{
+    resize:vertical;
+    min-height:120px;
+}
+
+.contact-form button{
+    background:#007bff;
+    color:#fff;
+    border:none;
+    padding:10px 25px;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:15px;
+}
+
+.contact-form button:hover{
+    background:#0056b3;
+}
+
+@media(max-width:768px){
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+
+
+
