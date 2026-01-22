@@ -41,10 +41,18 @@
         <p><strong>العنوان:</strong> مركز التنمية الزراعية</p>
     </div>
 
-    <form class="contact-form">
-        <input type="text" placeholder="الاسم">
-        <input type="email" placeholder="البريد الإلكتروني">
-        <textarea placeholder="رسالتك"></textarea>
+    <form class="contact-form"
+          action="https://formspree.io/f/YOUR_FORM_ID"
+          method="POST"
+          enctype="multipart/form-data">
+
+        <input type="text" name="name" placeholder="الاسم" required>
+        <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+        <textarea name="message" placeholder="نص الرسالة" required></textarea>
+
+        <!-- رفع ملف -->
+        <input type="file" name="attachment">
+
         <button type="submit">إرسال الرسالة</button>
     </form>
 
